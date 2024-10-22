@@ -1,0 +1,16 @@
+version: '3'
+services:
+  website:
+    build: ./website
+    ports:
+      - "8080:80"  # Bạn có thể thay đổi 8080 thành cổng tùy ý
+
+  backend1:
+    build: ./backend1
+    ports:
+      - "5000:5000"
+
+  backend2:
+    build: ./backend2
+    ports:
+      - "2004:2004"
